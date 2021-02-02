@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mailtrain</Name>
+  <Repository>mailtrain/mailtrain</Repository>
+  <Registry>https://hub.docker.com/r/mailtrain/mailtrain/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/mailtrain/mailtrain/</Support>
+  <Project/>
+  <Overview>Mailtrain v2   Template By Roxsen.   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1612231121</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Mailtrain v2   Template by Roxsen.   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>3003</HostPort>
+        <ContainerPort>3003</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>3004</HostPort>
+        <ContainerPort>3004</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>localhost</Value>
+      <Name>MYSQL_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mailtrain</Value>
+      <Name>MYSQL_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mailtrain</Value>
+      <Name>MYSQL_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>mailtrainpass</Value>
+      <Name>MYSQL_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>True</Value>
+      <Name>WWW_PROXY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://lists.example.com</Value>
+      <Name>URL_BASE_PUBLIC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://sbox.mailtrain.example.com</Value>
+      <Name>URL_BASE_SANDBOX</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://mailtrain.example.com</Value>
+      <Name>URL_BASE_TRUSTED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>WITH_REDIS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>localhost</Value>
+      <Name>MONGO_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>WITH_ZONE_MTA</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port 3000" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Port 3003" Target="3003" Default="3003" Mode="tcp" Description="Container Port: 3003" Type="Port" Display="always" Required="false" Mask="false">3003</Config>
+  <Config Name="Port 3004" Target="3004" Default="3004" Mode="tcp" Description="Container Port: 3004" Type="Port" Display="always" Required="false" Mask="false">3004</Config>
+  <Config Name="MYSQL_HOST" Target="MYSQL_HOST" Default="" Mode="" Description="Container Variable: MYSQL_HOST" Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="" Mode="" Description="MySql Server" Type="Variable" Display="always" Required="false" Mask="false">mailtrain</Config>
+  <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="" Mode="" Description="Container Variable: MYSQL_USER" Type="Variable" Display="always" Required="false" Mask="false">mailtrain</Config>
+  <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="" Mode="" Description="Container Variable: MYSQL_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">mailtrainpass</Config>
+  <Config Name="WWW_PROXY" Target="WWW_PROXY" Default="" Mode="" Description="Behind reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="URL_BASE_PUBLIC" Target="URL_BASE_PUBLIC" Default="" Mode="" Description="Container Variable: URL_BASE_PUBLIC" Type="Variable" Display="always" Required="false" Mask="false">https://lists.example.com</Config>
+  <Config Name="URL_BASE_SANDBOX" Target="URL_BASE_SANDBOX" Default="" Mode="" Description="Container Variable: URL_BASE_SANDBOX" Type="Variable" Display="always" Required="false" Mask="false">https://sbox.example.com</Config>
+  <Config Name="URL_BASE_TRUSTED" Target="URL_BASE_TRUSTED" Default="" Mode="" Description="Container Variable: URL_BASE_TRUSTED" Type="Variable" Display="always" Required="false" Mask="false">https://mailtrain.example.com</Config>
+  <Config Name="WITH_REDIS" Target="WITH_REDIS" Default="" Mode="" Description="Use Redis" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="MONGO_HOST" Target="MONGO_HOST" Default="" Mode="" Description="Container Variable: MONGO_HOST" Type="Variable" Display="always" Required="false" Mask="false">localhost</Config>
+  <Config Name="WITH_ZONE_MTA" Target="WITH_ZONE_MTA" Default="" Mode="" Description="Use Zone MTA" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
